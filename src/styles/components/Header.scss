@@ -1,3 +1,39 @@
 @import "../core/variables";
 @import "../core/mixins";
 @import "../core/animations";
+
+.header {
+  /*display properties*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /*general properties*/
+  width: 100%;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: $font_color;
+  }
+  &__nav--list {
+    /*display properties*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    &--item {
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+}
