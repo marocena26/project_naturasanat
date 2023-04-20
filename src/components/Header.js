@@ -23,7 +23,7 @@ function Header() {
           </li>
           <li className="header__nav--list--item">
             <NavLink to="Conocenos" className="link item__hover">
-              Conócenos
+              Quiénes somos
             </NavLink>
           </li>
           <li className="header__nav--list--item">

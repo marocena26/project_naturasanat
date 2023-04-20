@@ -12,9 +12,7 @@
   gap: 10px;
   /*general properties*/
   width: 100%;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
+  padding: 10px 0;
   background-color: $details_green_color;
 
   @include tablet {
@@ -23,7 +21,6 @@
     justify-content: space-between;
     align-items: center;
     /*general properties*/
-
     font-weight: 600;
   }
 

@@ -22,7 +22,7 @@ function App() {
       <Header />
       <main className="main">
         <Routes>
-          <Route path="/Inicio" element={<Inicio />} />
+          <Route path="/" element={<Inicio />} />
           <Route path="/Conocenos" element={<Conocenos />} />
           <Route path="/Catalogo" element={<Catalogo />} />
           <Route path="/Contacto" element={<Contacto />} />
