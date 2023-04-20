@@ -1,9 +1,13 @@
 //react libraries
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 //components
 import Header from "./Header";
+import Inicio from "./Inicio";
+import Conocenos from "./Conocenos";
+import Catalogo from "./Catalogo";
+import Contacto from "./Contacto";
+import Footer from "./Footer";
 
 //styles
 import "../styles/App.scss";
@@ -11,29 +15,20 @@ import "../styles/App.scss";
 function App() {
   // STATES
 
-  const [showMenu, setShowMenu] = useState(false);
-  const [showName, setShowName] = useState(true);
-  const [activeNav, setActiveNav] = useState("/Home");
-
   // HANDLER FUNCTIONS
-
-  const handlerShowMenu = () => {
-    setShowMenu(!showMenu);
-    setShowName(!showName);
-  };
 
   return (
     <>
-      <Header
-        handlerShowMenu={handlerShowMenu}
-        showMenu={showMenu}
-        showName={showName}
-        activeNav={activeNav}
-        setActiveNav={setActiveNav}
-      />
+      <Header />
       <main className="main">
-        <Routes></Routes>
+        <Routes>
+          <Route path="/Inicio" element={<Inicio />} />
+          <Route path="/Conocenos" element={<Conocenos />} />
+          <Route path="/Catalogo" element={<Catalogo />} />
+          <Route path="/Contacto" element={<Contacto />} />
+        </Routes>
       </main>
+      <Footer />
     </>
   );
 }
